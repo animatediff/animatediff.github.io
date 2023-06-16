@@ -35,7 +35,7 @@ a, a:visited {
 #authors {
   text-align: center;
   margin-bottom: 20px;
-  font-size: 20px;
+  font-size: 24px;
 }
 #conference {
   text-align: center;
@@ -149,4 +149,28 @@ p code {
 }
 .spacertd {
   width: 40px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+.col {
+  float: left;
+  width: 33.33%;
+  box-sizing: border-box;
+  padding: 2px;
+}
+
+.col-gallery {
+  float: left;
+  width: 25%;
+  box-sizing: border-box;
+  padding: 2px;
+}
+
+.example-img {
+  width: 100%;
 }
