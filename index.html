@@ -61,29 +61,29 @@
 
   <p style="text-align: left; font-size: 18px; margin: 10px;" class="serif">
     Generated with CivitAI models:
-    <a href="">ToonYou</a>
-    <a href="">Lyriel</a>
-    <a href="">majicMIX Realistic</a>
-    <a href="">RCNZ Cartoon 3d</a>
+    <a href="https://civitai.com/models/30240/toonyou">ToonYou</a>
+    <a href="https://civitai.com/models/22922/lyriel">Lyriel</a>
+    <a href="https://civitai.com/models/43331/majicmix-realistic">majicMIX Realistic</a>
+    <a href="https://civitai.com/models/66347/rcnz-cartoon-3d">RCNZ Cartoon 3d</a>
   </p>
 
 </div>
 
 <div class="content">
   <p style="text-align:left; font-size: 2em; font-weight: bold" class="serif">Abstract</p>
-  <p style="font-size: 1em" class="serif">Large text-to-image models achieved a remarkable leap in the evolution of AI, enabling high-quality and diverse synthesis of images from a given text prompt. However, these models lack the ability to mimic the appearance of subjects in a given reference set and synthesize novel renditions of them in different contexts. In this work, we present a new approach for "personalization" of text-to-image diffusion models (specializing them to users' needs). Given as input just a few images of a subject, we fine-tune a pretrained text-to-image model (Imagen, although our method is not limited to a specific model) such that it learns to bind a unique identifier with that specific subject. Once the subject is embedded in the output domain of the model, the unique identifier can then be used to synthesize fully-novel photorealistic images of the subject contextualized in different scenes. By leveraging the semantic prior embedded in the model with a new autogenous class-specific prior preservation loss, our technique enables synthesizing the subject in diverse scenes, poses, views, and lighting conditions that do not appear in the reference images. We apply our technique to several previously-unassailable tasks, including subject recontextualization, text-guided view synthesis, appearance modification, and artistic rendering (all while preserving the subject's key features).</p>
+  <p style="font-size: 1.2em" class="serif">Generating personalized animation clips is challenging due to the training costs and data collection. Existing text-to-video (T2V) generators are mostly trained with daily video like WebVid-10M and can only generate domain-specific animations with designed textual prompts. In this report, we take one step forward to the above target via solving a newly proposed problem setting, i.e., animating a text-to-image (T2I) model personalized for a specific domain, considering tuning a personalized image model is much cheaper than training in video domain. Our method first trains a motion modeling module inserted into the base T2I model with video data while freezing the original model weight unchanged. At inference time, the module is plugged into another personalized version of the base T2I model. Our key observations are: 1) T2I models are able to generate consistent content without updating their parameters; 2) tuning-based personalization methods scarcely modify the feature space of the base model, which ensures the generalizability of our pre-trained motion modeling module. Our extensive experiments demonstrate our method's effectiveness and its remarkable results.</p>
 </div>
 
 <div class="content">
   <p style="text-align:left; font-size: 2em; font-weight: bold" class="serif">Pipeline</p>
-  <p style="font-size: 1em" class="serif">Large text-to-image models achieved a remarkable leap in the evolution of AI, enabling high-quality and diverse synthesis of images from a given text prompt. However, these models lack the ability to mimic the appearance of subjects in a given reference set and synthesize novel renditions of them in different contexts.</p>
-  <img class="summary-img" src="./DreamBooth_files/high_level.png" style="width:100%;"> <br>
-  <p style="font-size: 1em" class="serif">Large text-to-image models achieved a remarkable leap in the evolution of AI, enabling high-quality and diverse synthesis of images from a given text prompt. However, these models lack the ability to mimic the appearance of subjects in a given reference set and synthesize novel renditions of them in different contexts. Large text-to-image models achieved a remarkable leap in the evolution of AI, enabling high-quality and diverse synthesis of images from a given text prompt. However, these models lack the ability to mimic the appearance of subjects in a given reference set and synthesize novel renditions of them in different contexts.</p>
+  <p style="font-size: 1.2em" class="serif">Large text-to-image models achieved a remarkable leap in the evolution of AI, enabling high-quality and diverse synthesis of images from a given text prompt. However, these models lack the ability to mimic the appearance of subjects in a given reference set and synthesize novel renditions of them in different contexts.</p>
+  <img class="summary-img" src="figs/framework.jpg" style="width:100%;"> <br>
+  <p style="font-size: 1.2em" class="serif">Large text-to-image models achieved a remarkable leap in the evolution of AI, enabling high-quality and diverse synthesis of images from a given text prompt. However, these models lack the ability to mimic the appearance of subjects in a given reference set and synthesize novel renditions of them in different contexts. Large text-to-image models achieved a remarkable leap in the evolution of AI, enabling high-quality and diverse synthesis of images from a given text prompt. However, these models lack the ability to mimic the appearance of subjects in a given reference set and synthesize novel renditions of them in different contexts.</p>
 </div>
 
 <div class="content">
   <p style="text-align:left; font-size: 2em; font-weight: bold" class="serif">Gallery</p>
-  <p style="font-size: 1em" class="serif">Large text-to-image models achieved a remarkable leap in the evolution of AI, enabling high-quality and diverse synthesis of images from a given text prompt. However, these models lack the ability to mimic the appearance of subjects in a given reference set and synthesize novel renditions of them in different contexts.</p>
+  <p style="font-size: 1.2em" class="serif">Large text-to-image models achieved a remarkable leap in the evolution of AI, enabling high-quality and diverse synthesis of images from a given text prompt. However, these models lack the ability to mimic the appearance of subjects in a given reference set and synthesize novel renditions of them in different contexts.</p>
 
   <div class="row">
     <div class="col-gallery"><img src="figs/toonyou-01.gif" class="img-fluid example-img"><br></div>
@@ -91,7 +91,7 @@
     <div class="col-gallery"><img src="figs/toonyou-03.gif" class="img-fluid example-img"></div>
     <div class="col-gallery"><img src="figs/toonyou-04.gif" class="img-fluid example-img"></div>
   </div>
-  <p class="serif" style="text-align: left; margin: 5px; margin-bottom: 20px">Model: <a href="">Link</a></p>
+  <p class="serif" style="font-size: 1.2em; text-align: left; margin: 5px; margin-bottom: 20px">Model: <a href="https://civitai.com/models/30240/toonyou">ToonYou</a></p>
 
   <div class="row">
     <div class="col-gallery"><img src="figs/counterfeit-01.gif" class="img-fluid example-img"><br></div>
@@ -99,7 +99,7 @@
     <div class="col-gallery"><img src="figs/counterfeit-03.gif" class="img-fluid example-img"></div>
     <div class="col-gallery"><img src="figs/counterfeit-04.gif" class="img-fluid example-img"></div>
   </div>
-  <p class="serif" style="text-align: left; margin: 5px; margin-bottom: 20px">Model: <a href="">Link</a></p>
+  <p class="serif" style="font-size: 1.2em; text-align: left; margin: 5px; margin-bottom: 20px">Model: <a href="https://civitai.com/models/4468/counterfeit-v30">Counterfeit V3.0</a></p>
 
   <div class="row">
     <div class="col-gallery"><img src="figs/realistic-02.gif" class="img-fluid example-img"><br></div>
@@ -107,7 +107,7 @@
     <div class="col-gallery"><img src="figs/realistic-03.gif" class="img-fluid example-img"></div>
     <div class="col-gallery"><img src="figs/realistic-04.gif" class="img-fluid example-img"></div>
   </div>
-  <p class="serif" style="text-align: left; margin: 5px; margin-bottom: 20px">Model: <a href="">Link</a></p>
+  <p class="serif" style="font-size: 1.2em; text-align: left; margin: 5px; margin-bottom: 20px">Model: <a href="https://civitai.com/models/4201/realistic-vision-v20">Realistic Vision V2.0</a></p>
 
   <div class="row">
     <div class="col-gallery"><img src="figs/portrait-01.gif" class="img-fluid example-img"><br></div>
@@ -115,7 +115,7 @@
     <div class="col-gallery"><img src="figs/portrait-05.gif" class="img-fluid example-img"></div>
     <div class="col-gallery"><img src="figs/portrait-04.gif" class="img-fluid example-img"></div>
   </div>
-  <p class="serif" style="text-align: left; margin: 5px; margin-bottom: 20px">Model: <a href="">Link</a></p>
+  <p class="serif" style="font-size: 1.2em; text-align: left; margin: 5px; margin-bottom: 20px">Model: <a href="https://civitai.com/models/43331/majicmix-realistic">majicMIX Realistic</a></p>
 
 </div>
 
