@@ -1,3 +1,4 @@
-
+.gitignore
 AnimateDiff_files/.DS_Store
 animations/run.ipynb
+*.gif
